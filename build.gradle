@@ -1,0 +1,23 @@
+group 'com.extnds.nemo'
+version '1.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // Validation Framework
+    compile group: 'org.hibernate', name: 'hibernate-validator', version: '6.0.1.Final'
+    compile group: 'org.glassfish', name: 'javax.el', version: '3.0.0'
+
+    // BoilerPlate Code Generators
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+
+    // Test Framework
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
